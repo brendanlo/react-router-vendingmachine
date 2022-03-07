@@ -1,0 +1,8 @@
+.NavBar a {
+    padding: 10px;
+    /* z-index: 1; */
+}
+
+.NavBar a.active{
+    color:orange;
+}
