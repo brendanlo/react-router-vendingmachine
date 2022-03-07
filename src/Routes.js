@@ -1,20 +1,20 @@
-]import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Banana from "./Banana";
 import Chip from "./Chip";
 import Cookie from "./Cookie";
 import VendingMachine from "./VendingMachine";
 
 function Routes() {
-  <div>
+  return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/chips">
+        <Route exact path="/chip">
           <Chip />
         </Route>
-        <Route exact path="/cookies">
+        <Route exact path="/cookie">
           <Cookie />
         </Route>
-        <Route exact path="/bananas">
+        <Route exact path="/banana">
           <Banana />
         </Route>
         <Route exact path="/">
@@ -22,7 +22,7 @@ function Routes() {
         </Route>
       </Switch>
     </BrowserRouter>
-  </div>
+  );
 }
 
 export default Routes;
